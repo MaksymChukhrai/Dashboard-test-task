@@ -1,0 +1,72 @@
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+  
+    &__logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+  
+      img {
+        width: 30px;
+        margin-right: 10px;
+      }
+  
+      span {
+        font-weight: bold;
+      }
+    }
+  
+    &__menu {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    &__item {
+      margin-bottom: 15px;
+  
+      a {
+        text-decoration: none;
+        color: #9197B3;
+        display: flex;
+        align-items: center;
+  
+        &:hover {
+          color: #5932EA;
+        }
+      }
+  
+      &--active a {
+        color: #5932EA;
+        font-weight: bold;
+      }
+    }
+  
+    &__user {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+    }
+  
+    &__user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  
+    &__user-info {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__user-name {
+      font-weight: bold;
+    }
+  
+    &__user-position {
+      font-size: 0.8em;
+      color: #757575;
+    }
+  }

@@ -1,30 +1,32 @@
 {
-  "name": "parcel-project-template",
+  "name": "dashboard-test-task",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://maksymchukhrai.github.io/Dashboard-test-task/",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "start": "parcel src/pug/index.pug",
+    "build": "parcel build src/pug/index.pug --public-url /Dashboard-test-task/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/MaksymChukhrai/Dashboard-test-task.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Maksym Chukhrai <m.chukhrai.job@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/MaksymChukhrai/Dashboard-test-task/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.12.0",
     "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
+    "parcel": "^2.12.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "pug": "^3.0.3"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }

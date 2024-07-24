@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title CRM Dashboard
+    link(rel="stylesheet" href="../sass/main.scss")
+    // Подключение шрифта
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap")
+  body
+    include ../partials/_header.pug
+    .container
+      include ../partials/_sidebar.pug
+      main.main-content
+        h1.main-content__title Hello Evano 👋
+        section.customers
+          h2.customers__title All Customers
+          table.customers__table
+            thead
+              tr
+                th.customers__th Customer Name
+                th.customers__th Company
+                th.customers__th Phone Number
+                th.customers__th Email
+                th.customers__th Country
+                th.customers__th Status
+            tbody
+              tr.customers__tr
+                td.customers__td Jane Cooper
+                td.customers__td Microsoft
+                td.customers__td (225) 555-0118
+                td.customers__td jane@microsoft.com
+                td.customers__td United States
+                td.customers__td.customers__td--active Active
+    include ../partials/_footer.pug
+    script(src="../index.js")

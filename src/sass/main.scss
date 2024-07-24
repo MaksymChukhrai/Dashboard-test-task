@@ -1,0 +1,67 @@
+@import './common';
+@import './footer';
+@import './header';
+@import './mixins';
+@import './sidebar';
+@import './variables';
+
+// Стили для основного контента
+.container {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  
+    &__title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .customers {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  
+    &__title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  
+    &__table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+    }
+  
+    &__th {
+      text-align: left;
+      color: #B5B7C0;
+      font-weight: normal;
+      padding: 10px;
+    }
+  
+    &__td {
+      background-color: #F9FBFF;
+      padding: 10px;
+  
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+  
+      &:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+  
+      &--active {
+        color: #008767;
+        background-color: rgba(22, 192, 152, 0.38);
+        border-radius: 4px;
+        padding: 4px 8px;
+      }
+    }
+  }

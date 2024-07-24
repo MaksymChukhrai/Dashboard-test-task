@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+  
+    &__search {
+      input {
+        padding: 10px;
+        border: 1px solid #eee;
+        border-radius: 20px;
+        width: 200px;
+      }
+    }
+  
+    &__user {
+      // Стили для элементов пользователя, если они есть в макете
+    }
+  }
