@@ -2,44 +2,58 @@ nav.sidebar
   .sidebar__logo
     svg.icon
       use(xlink:href='../images/sprite.svg#setting-1')
-    span Dashboard v.01
+        .sidebar__logo-text
+          span.sidebar__logo-title Dashboard
+          span.sidebar__logo-version v.01
 
   ul.sidebar__menu
-    li.sidebar__item.sidebar__item--active
+    li.sidebar__item
       a(href="#")
         svg.icon
           use(xlink:href='../images/sprite.svg#key-square-2')
         | Dashboard
+        svg.icon-arrow
+          use(xlink:href='../images/sprite.svg#icon-chevron-right-1')
 
     li.sidebar__item
       a(href="#")
         svg.icon
           use(xlink:href='../images/sprite.svg#3d-square-1')
         | Product
+        svg.icon-arrow
+          use(xlink:href='../images/sprite.svg#icon-chevron-right-2')
 
     li.sidebar__item
       a(href="#")
         svg.icon
           use(xlink:href='../images/sprite.svg#user-square-1')
         | Customers
+        svg.icon-arrow
+          use(xlink:href='../images/sprite.svg#icon-chevron-right-2')
 
     li.sidebar__item
       a(href="#")
         svg.icon
           use(xlink:href='../images/sprite.svg#wallet-money-3')
         | Income
+        svg.icon-arrow
+          use(xlink:href='../images/sprite.svg#icon-chevron-right-2')
 
     li.sidebar__item
       a(href="#")
         svg.icon
           use(xlink:href='../images/sprite.svg#discount-shape-1')
         | Promote
+        svg.icon-arrow
+          use(xlink:href='../images/sprite.svg#icon-chevron-right-2')
 
     li.sidebar__item
       a(href="#")
         svg.icon
           use(xlink:href='../images/sprite.svg#message-question-1')
         | Help
+        svg.icon-arrow
+          use(xlink:href='../images/sprite.svg#icon-chevron-right-2')
 
   .sidebar__user
     img.sidebar__user-avatar(src="../images/evano.webp" alt="Evano")

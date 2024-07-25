@@ -8,13 +8,20 @@ html(lang="en")
     // Подключение шрифта
     link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap")
   body
-    include ../partials/_header.pug
+    //- include ../partials/_header.pug
     .container
       include ../partials/_sidebar.pug
       main.main-content
         h1.main-content__title Hello Evano 👋🏼,
         section.customers
-          h2.customers__title All Customers
+          .customers__header
+            .customers__title-wrap
+              h2.customers__title All Customers
+              p.customers__subtitle Active Members
+            .customers__search
+              svg.icon
+                use(xlink:href='../images/sprite.svg#icon-search-1')
+              input(type="text" placeholder="Search...")
           table.customers__table
             thead
               tr
@@ -32,5 +39,67 @@ html(lang="en")
                 td.customers__td jane@microsoft.com
                 td.customers__td United States
                 td.customers__td.customers__td--active Active
-    include ../partials/_footer.pug
+              tr.customers__tr
+                td.customers__td Floyd Miles
+                td.customers__td Yahoo
+                td.customers__td (205) 555-0100
+                td.customers__td floyd@yahoo.com
+                td.customers__td Kiribati
+                td.customers__td.customers__td--inactive Inactive
+              tr.customers__tr
+                td.customers__td Ronald Richards
+                td.customers__td Adobe
+                td.customers__td (302) 555-0107
+                td.customers__td ronald@adobe.com
+                td.customers__td Israel
+                td.customers__td.customers__td--inactive Inactive
+              tr.customers__tr
+                td.customers__td Marvin McKinney
+                td.customers__td Tesla
+                td.customers__td (252) 555-0126
+                td.customers__td marvin@tesla.com
+                td.customers__td Iran
+                td.customers__td.customers__td--active Active
+              tr.customers__tr
+                td.customers__td Jerome Bell
+                td.customers__td Google
+                td.customers__td (629) 555-0129
+                td.customers__td jerome@google.com
+                td.customers__td Réunion
+                td.customers__td.customers__td--active Active
+              tr.customers__tr
+                td.customers__td Kathryn Murphy
+                td.customers__td Microsoft
+                td.customers__td (406) 555-0120
+                td.customers__td kathryn@microsoft.com
+                td.customers__td Curaçao
+                td.customers__td.customers__td--active Active
+              tr.customers__tr
+                td.customers__td Jacob Jones
+                td.customers__td Yahoo
+                td.customers__td (208) 555-0112
+                td.customers__td jacob@yahoo.com
+                td.customers__td Brazil
+                td.customers__td.customers__td--active Active
+              tr.customers__tr
+                td.customers__td Kristin Watson
+                td.customers__td Facebook
+                td.customers__td (704) 555-0127
+                td.customers__td kristin@facebook.com
+                td.customers__td Åland Islands
+                td.customers__td.customers__td--inactive Inactive
+
+          .customers__pagination
+            p.customers__pagination-info Showing data 1 to 8 of 256K entries
+            .customers__pagination-buttons
+              button.customers__pagination-button &lt;
+              button.customers__pagination-button.customers__pagination-button--active 1
+              button.customers__pagination-button 2
+              button.customers__pagination-button 3
+              button.customers__pagination-button 4
+              span ...
+              button.customers__pagination-button 40
+              button.customers__pagination-button &gt;
+
+    //- include ../partials/_footer.pug
     script(src="../index.js")
