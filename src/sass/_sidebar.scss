@@ -86,10 +86,26 @@
       margin-left: 86px;
       margin-left: auto;
     }
-
+    &--active{
+      padding-right: 0;
+      padding-left: 0;
+    }
     &--active a {
-      // color: #5932EA;
-      font-weight: bold;
+      border-radius: 8px;
+      background: #5932EA;
+      color: #fff; 
+      padding: 11px 11px;
+      width: 261px;
+    }
+    &--active a:hover {
+      color: #fff; 
+    }
+    &--active svg.icon {
+      fill: #5932ea;
+    }
+    &--active svg.icon-arrow {
+      fill: #fff; 
+      margin-left: 60px;
     }
   }
 
