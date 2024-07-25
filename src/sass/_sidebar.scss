@@ -25,6 +25,9 @@
   
     &__item {
       margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
   
       a {
         text-decoration: none;
@@ -37,8 +40,13 @@
         }
       }
   
+      svg.icon {
+        width: 24px;
+        height: 24px;
+      }
+
       &--active a {
-        color: #5932EA;
+        // color: #5932EA;
         font-weight: bold;
       }
     }

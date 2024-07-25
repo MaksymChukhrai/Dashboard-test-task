@@ -6,6 +6,10 @@
 @import './variables';
 
 // Стили для основного контента
+body{
+  font-family: 'Poppins';
+  font-size: 14px;
+}
 .container {
     display: flex;
   }

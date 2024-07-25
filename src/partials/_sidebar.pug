@@ -1,20 +1,46 @@
 nav.sidebar
   .sidebar__logo
-    //- img(src="path/to/logo.svg" alt="Dashboard Logo")
+    svg.icon
+      use(xlink:href='../images/sprite.svg#setting-1')
     span Dashboard v.01
+
   ul.sidebar__menu
     li.sidebar__item.sidebar__item--active
-      a(href="#") Dashboard
+      a(href="#")
+        svg.icon
+          use(xlink:href='../images/sprite.svg#key-square-2')
+        | Dashboard
+
     li.sidebar__item
-      a(href="#") Product
+      a(href="#")
+        svg.icon
+          use(xlink:href='../images/sprite.svg#3d-square-1')
+        | Product
+
     li.sidebar__item
-      a(href="#") Customers
+      a(href="#")
+        svg.icon
+          use(xlink:href='../images/sprite.svg#user-square-1')
+        | Customers
+
     li.sidebar__item
-      a(href="#") Income
+      a(href="#")
+        svg.icon
+          use(xlink:href='../images/sprite.svg#wallet-money-3')
+        | Income
+
     li.sidebar__item
-      a(href="#") Promote
+      a(href="#")
+        svg.icon
+          use(xlink:href='../images/sprite.svg#discount-shape-1')
+        | Promote
+
     li.sidebar__item
-      a(href="#") Help
+      a(href="#")
+        svg.icon
+          use(xlink:href='../images/sprite.svg#message-question-1')
+        | Help
+
   .sidebar__user
     img.sidebar__user-avatar(src="../images/evano.webp" alt="Evano")
     .sidebar__user-info

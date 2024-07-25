@@ -5,7 +5,8 @@
   "homepage": "https://maksymchukhrai.github.io/Dashboard-test-task/",
   "scripts": {
     "start": "parcel src/pug/index.pug",
-    "build": "parcel build src/pug/index.pug --public-url /Dashboard-test-task/"
+    "build": "parcel build src/pug/index.pug --public-url /Dashboard-test-task/",
+    "generate-sprite": "svg-sprite-generator -d src/icons -o src/images/sprite.svg"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,8 @@
     "parcel": "^2.12.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4",
-    "pug": "^3.0.3"
+    "pug": "^3.0.3",
+    "svg-sprite-generator": "^0.0.7"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
