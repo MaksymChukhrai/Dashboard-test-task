@@ -1,8 +1,21 @@
-@import './common';
-@import './sidebar';
 @import './variables';
+@import './common';
+// mob styles
+@import './sidebar-mob';
+@import './main-mob';
 
+// PC styles
+@import './sidebar';
+
+
+
+@media screen and (min-width: 1440px) {
 // Стили для основного контента
+.mobile-menu-overlay,
+.burger-menu,
+.sidebar__close-btn{
+  display:none;
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
@@ -117,7 +130,7 @@ body {
         &::after {
           content: '';
           position: absolute;
-          bottom: -5px; // Чтобы линия не перекрывалась ячейками
+          bottom: -5px; 
           left: 0;
           width: 840px;
           height: 1px;
@@ -181,7 +194,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px; // Подберите значение по макету
+    margin-top: 30px; 
   }
 
   &__pagination-info {
@@ -214,4 +227,5 @@ body {
       color: white;
     }
   }
+}
 }

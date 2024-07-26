@@ -1,10 +1,15 @@
-nav.sidebar
-  .sidebar__logo
-    svg.icon
-      use(xlink:href='../images/sprite.svg#setting-1')
-        .sidebar__logo-text
-          span.sidebar__logo-title Dashboard
-          span.sidebar__logo-version v.01
+
+nav.sidebar.is-hidden
+  .sidebar__header
+    .sidebar__logo
+      svg.icon
+        use(xlink:href='../images/sprite.svg#setting-1')
+      .sidebar__logo-text
+        span.sidebar__logo-title Dashboard
+        span.sidebar__logo-version v.01
+    button.sidebar__close-btn(data-menu-close)
+      svg.icon
+        use(xlink:href='../images/sprite.svg#close-cross')
 
   ul.sidebar__menu
     li.sidebar__item

@@ -1,0 +1,40 @@
+@media screen and (max-width: 1439px) {
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    // top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    // z-index: 1000;
+
+    svg.icon {
+      width: 24px;
+      height: 24px;
+      fill: #5932ea;
+    }
+  }
+
+  .main-content {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px; // Добавьте отступ снизу, если нужно
+    }
+  
+    &__title {
+      margin: 0; // Убирает стандартные отступы у h1
+    }
+  }
+
+  .customers__table-container {
+    overflow-x: auto;
+
+    .customers__table {
+      width: 865px;
+    }
+  }
+}
