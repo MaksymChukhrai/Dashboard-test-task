@@ -29,7 +29,7 @@ body {
 
 .main-content {
   flex: 1;
-  padding: 20px;
+  // padding: 20px;
   background-color: #fafbff;
   padding: 41px 95px 258px 71px;
 
@@ -111,11 +111,12 @@ body {
 
     thead {
       position: relative;
+   
 
       &::after {
         content: '';
         position: absolute;
-        bottom: -5px; // Чтобы линия не перекрывалась ячейками
+        bottom: -5px; 
         left: -40px;
         width: 950px;
         height: 1px;
