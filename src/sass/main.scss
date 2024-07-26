@@ -1,7 +1,4 @@
 @import './common';
-@import './footer';
-@import './header';
-@import './mixins';
 @import './sidebar';
 @import './variables';
 
@@ -26,7 +23,7 @@ body {
   &__title {
     font-size: 24px;
     margin-bottom: 51px;
-    margin-top:0;
+    margin-top: 0;
     font-weight: 400;
     line-height: normal;
   }
@@ -69,7 +66,6 @@ body {
     display: flex;
     align-items: center;
     margin-right: 40px;
-  
 
     svg {
       position: absolute;
@@ -78,7 +74,7 @@ body {
       transform: translateY(-50%);
       width: 24px;
       height: 24px;
-      pointer-events: none; // Чтобы иконка не мешала вводу
+      pointer-events: none; 
     }
 
     input {
@@ -88,12 +84,16 @@ body {
       height: 38px;
       padding-left: 40px;
       border: none;
+      color: #b5b7c0;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.12px;
     }
   }
 
   &__table {
     width: 100%;
-    border-collapse: separate; // Используем separate для границ
+    border-collapse: separate; 
     border-spacing: 0 10px;
 
     thead {
@@ -104,9 +104,9 @@ body {
         position: absolute;
         bottom: -5px; // Чтобы линия не перекрывалась ячейками
         left: -40px;
-        width: 968px;
+        width: 950px;
         height: 1px;
-        background: #EEE;
+        background: #eee;
       }
     }
 
@@ -119,9 +119,9 @@ body {
           position: absolute;
           bottom: -5px; // Чтобы линия не перекрывалась ячейками
           left: 0;
-          width: 858px;
+          width: 840px;
           height: 1px;
-          background: #EEE;
+          background: #eee;
         }
       }
     }
@@ -147,7 +147,7 @@ body {
 
     &--active {
       margin-top: 5px;
-    
+
       color: #008767;
       background: #16c09861;
       border: 1px solid #00b087;
@@ -185,34 +185,33 @@ body {
   }
 
   &__pagination-info {
-    color: #B5B7C0;
+    color: #b5b7c0;
     line-height: normal;
     letter-spacing: -0.14px;
   }
 
   &__pagination-buttons {
     display: flex;
-    gap: 12px; 
+    gap: 12px;
     margin-right: 30px;
   }
 
   &__pagination-button {
     border-radius: 4px;
-    border: 1px solid #EEE;
+    border: 1px solid #eee;
     padding: 6px 9px;
     background: transparent;
     cursor: pointer;
-    color: #404B52;
+    color: #404b52;
     font-size: 12px;
     font-weight: 500;
     line-height: 1;
     letter-spacing: -0.12px;
 
     &--active {
-      border: 1px solid #5932EA;
-      background: #5932EA;
+      border: 1px solid #5932ea;
+      background: #5932ea;
       color: white;
     }
   }
 }
-
