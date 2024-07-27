@@ -9,7 +9,7 @@
     z-index: 999;
     transform: translateX(-100%);
     transition: transform var(--transition-speed) var(--transition-timing),
-    opacity var(--transition-speed) var(--transition-timing);
+      opacity var(--transition-speed) var(--transition-timing);
     opacity: 0;
     pointer-events: none;
     display: flex;
