@@ -1,12 +1,11 @@
 @media screen and (max-width: 1439px) {
     .sidebar {
-        background-color: #5932ea;
+        background-color: var(--primary-white-color);
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%; // Занимает всю ширину экрана
+        width: 100%; 
         height: 100%;
-        background-color: #fff;
         z-index: 999;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
@@ -93,7 +92,7 @@
               width: 100%; 
         
               &:hover {
-                color: #5932ea;
+                color:var(--active-color);
               }
             }
         
@@ -113,19 +112,19 @@
             }
             &--active a {
               border-radius: 8px;
-              background: #5932EA;
-              color: #fff; 
+              background: var(--active-color);
+              color:var(--primary-white-color);
               padding: 11px 11px;
               width: 261px;
             }
             &--active a:hover {
-              color: #fff; 
+                color:var(--primary-white-color);
             }
             &--active svg.icon {
-              fill: #5932ea;
+                fill:var(--active-color);
             }
             &--active svg.icon-arrow {
-              fill: #fff; 
+                fill:var(--primary-white-color);
               margin-left: 60px;
             }
           }
@@ -157,8 +156,6 @@
             color: #757575;
           }
     
-
-
         .sidebar__close-btn {
           background: none;
           border: none;
@@ -168,7 +165,7 @@
           svg.icon {
             width: 24px;
             height: 24px;
-            stroke: #5932ea;
+            stroke: var(--active-color);
           }
         }
 

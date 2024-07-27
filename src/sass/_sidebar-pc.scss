@@ -2,7 +2,7 @@
 
 .sidebar {
   // width: 306px;
-  background-color: #fff;
+  background-color: var(--primary-white-color);
   padding: 36px 36px 76px 39px;
 
   &__logo {
@@ -26,7 +26,7 @@
     }
     &-title {
       color: #000;
-      font-family: Poppins, sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 26px;
       font-style: normal;
       font-weight: 600;
@@ -36,7 +36,7 @@
 
     &-version {
       color: #838383;
-      font-family: Poppins, sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 10px;
       font-style: normal;
       font-weight: 400;
@@ -74,7 +74,7 @@
       width: 100%; 
 
       &:hover {
-        color: #5932ea;
+        color:var(--active-color);
       }
     }
 
@@ -94,19 +94,19 @@
     }
     &--active a {
       border-radius: 8px;
-      background: #5932EA;
-      color: #fff; 
+      background: var(--active-color);
+      color:var(--primary-white-color);
       padding: 11px 11px;
       width: 261px;
     }
     &--active a:hover {
-      color: #fff; 
+      color:var(--primary-white-color);
     }
     &--active svg.icon {
-      fill: #5932ea;
+      fill:var(--active-color);
     }
     &--active svg.icon-arrow {
-      fill: #fff; 
+      fill:var(--primary-white-color);
       margin-left: 60px;
     }
   }

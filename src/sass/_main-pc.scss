@@ -1,58 +1,47 @@
-@media screen and (max-width: 1439px) {
-  .burger-menu {
-    display: block;
-    position: absolute;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
+@media screen and (min-width: 1440px) {
+  // Стили для основного контента
+  .mobile-menu-overlay,
+  .burger-menu,
+  .sidebar__close-btn {
+    display: none;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
 
-    svg.icon {
-      width: 24px;
-      height: 24px;
-      fill: var(--active-color);
-    }
+  .container {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .main-content {
-    padding: 30px 15px 15px 15px;
+    flex: 1;
+    // padding: 20px;
     background-color: var(--main-content-bg-color);
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
+    padding: 41px 95px 258px 71px;
 
     &__title {
+      font-size: 24px;
+      margin-bottom: 51px;
       margin-top: 0;
-      margin-bottom: 0;
-      margin-left: 10px;
-      font-size: 22px;
-      font-weight: 600;
+      font-weight: 400;
       line-height: normal;
-      letter-spacing: -0.22px;
     }
   }
 
-  .customers__table-container {
-    overflow-x: auto;
-
-    .customers__table {
-      width: 865px;
-    }
-  }
-  //customers
   .customers {
     background-color: var(--primary-white-color);
+    fill: var(--primary-white-color);
     filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
-    border-radius: 10px;
-    padding: 10px 0px 10px 10px;
+    border-radius: 30px;
+    padding: 30px 38px 30px 38px;
 
     &__title {
       margin-top: 0;
-      margin-bottom: 30px;
-      font-size: 18px;
+      margin-bottom: 7px;
+      font-size: 22px;
       font-weight: 600;
       line-height: normal;
       letter-spacing: -0.22px;
@@ -66,6 +55,7 @@
       margin-bottom: 0;
       margin-top: 0;
     }
+
     &__header {
       display: flex;
       justify-content: space-between;
@@ -77,6 +67,7 @@
       position: relative;
       display: flex;
       align-items: center;
+      margin-right: 40px;
 
       svg {
         position: absolute;
@@ -91,7 +82,7 @@
       input {
         border-radius: 10px;
         background: var(--main-content-bg-color);
-        width: 136px;
+        width: 216px;
         height: 38px;
         padding-left: 40px;
         border: none;
@@ -99,12 +90,6 @@
         font-size: 12px;
         font-weight: 400;
         letter-spacing: -0.12px;
-      }
-
-      &__table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0 10px;
       }
     }
 
@@ -115,11 +100,6 @@
 
       thead {
         position: relative;
-        tr {
-          th.customers__th {
-            text-align: left;
-          }
-        }
 
         &::after {
           content: '';
@@ -158,8 +138,9 @@
       line-height: normal;
       letter-spacing: -0.14px;
     }
+
     &__td {
-      // padding: 10px 0px;
+      padding: 10px 0px;
       color: #292d32;
       font-style: normal;
       font-weight: 500;
@@ -183,6 +164,7 @@
 
       &--inactive {
         margin-top: 5px;
+
         color: var(--inactive-red-color);
         letter-spacing: -0.14px;
         background: #ffc5c5;
@@ -198,6 +180,9 @@
     }
 
     &__pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-top: 30px;
     }
 
