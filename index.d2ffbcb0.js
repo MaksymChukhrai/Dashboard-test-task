@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".main-content__title");e.innerHTML=e.textContent.split("").map(e=>`<span>${e}</span>`).join("");let t=e.querySelectorAll("span");e.addEventListener("mouseenter",()=>{gsap.to(t,{duration:.5,y:-20,rotation:360,color:"#007bff",stagger:.03,ease:"back.out(1.7)"})}),e.addEventListener("mouseleave",()=>{gsap.to(t,{duration:.5,y:0,rotation:0,color:"inherit",stagger:.02,ease:"power2.out"})})});
+//# sourceMappingURL=index.d2ffbcb0.js.map
