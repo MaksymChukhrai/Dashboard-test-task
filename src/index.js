@@ -1,3 +1,5 @@
+//функционал открытия-закрытия мобильного меню
+
 document.addEventListener('DOMContentLoaded', () => {
   const menuOpenBtn = document.querySelector('[data-menu-open]');
   const menuCloseBtn = document.querySelector('[data-menu-close]');

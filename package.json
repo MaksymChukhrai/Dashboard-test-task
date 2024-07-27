@@ -19,6 +19,7 @@
     "url": "https://github.com/MaksymChukhrai/Dashboard-test-task/issues"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
