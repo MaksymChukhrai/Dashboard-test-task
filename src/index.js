@@ -5,15 +5,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openMenu() {
     sidebar.classList.remove('is-hidden');
-    sidebar.classList.add('is-open');
+    // Используем requestAnimationFrame для обеспечения применения начальных стилей
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        sidebar.classList.add('is-open');
+      });
+    });
     document.body.style.overflow = 'hidden';
   }
 
   function closeMenu() {
     sidebar.classList.remove('is-open');
-    setTimeout(() => {
-      sidebar.classList.add('is-hidden');
-    }, 300);
+    sidebar.addEventListener('transitionend', function handler(e) {
+      if (e.propertyName === 'transform') {
+        sidebar.classList.add('is-hidden');
+        sidebar.removeEventListener('transitionend', handler);
+      }
+    });
     document.body.style.overflow = '';
   }
 
