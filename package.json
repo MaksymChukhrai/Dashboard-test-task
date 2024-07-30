@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "",
   "homepage": "https://maksymchukhrai.github.io/Dashboard-test-task/",
+  "source": "src/pug/index.pug",
   "scripts": {
     "start": "parcel src/pug/index.pug",
     "build": "parcel build src/pug/index.pug --public-url /Dashboard-test-task/",
@@ -20,7 +21,8 @@
   },
   "dependencies": {
     "gsap": "^3.12.5",
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "webextension-polyfill": "^0.12.0"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.12.0",
