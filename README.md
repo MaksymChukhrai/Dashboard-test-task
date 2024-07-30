@@ -1,4 +1,4 @@
-# Технічне завдання на вакансію Front-end developer, HTML-верстальник
+# Тестове завдання на вакансію Front-end developer, HTML-верстальник
 
 [жива сторінка проекту](https://maksymchukhrai.github.io/Dashboard-test-task/) 
 
