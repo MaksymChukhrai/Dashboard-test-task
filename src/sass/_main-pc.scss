@@ -45,73 +45,25 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // margin-bottom: 30px;
-    }
-
-    &__title {
-      margin-top: 0;
-      margin-bottom: 7px;
-      font-size: 22px;
-      font-weight: 600;
-      line-height: normal;
-      letter-spacing: -0.22px;
-    }
-
-    &__subtitle {
-      color: var(--light-green-color);
-      font-weight: 400;
-      letter-spacing: -0.14px;
-      margin: 0;
+      flex-direction: row;
     }
 
     // Стили для поиска
     &__search {
-      position: relative;
-      display: flex;
-      align-items: center;
-      margin-right: 17px;
-      margin-top: 10px;
-
-      svg {
-        position: absolute;
-        left: 8px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 24px;
-        height: 24px;
-        pointer-events: none;
-      }
-
-      input {
-        border-radius: 10px;
-        background: var(--input-bg-color);
-        width: 216px;
-        height: 38px;
-        padding-left: 40px;
-        border: none;
-        color: var(--light-grey-color);
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: -0.12px;
-      }
+      margin-right: 9px;
+      margin-top: 5px;
+  
     }
 
     // Стили для таблицы на grid
     &__table-container {
-      display: grid;
-      margin-top: 40px;
-      margin-bottom: 32px;
-      width: 100%;
+       margin-top: 40px;
+       overflow-x: initial;
+       margin-bottom: 0;
 
       .customers__header {
-        display: grid;
-        // Меняем значения колонок для более точного соответствия макету
         grid-template-columns: 130px 110px 130px 200px 120px 110px;
-        column-gap: 20px;
-        align-items: center;
-        padding: 14px 0;
-        border-bottom: 1px solid #eee;
-        width: 100%;
+        padding: 14px 0px;
       }
     }
 
@@ -121,7 +73,7 @@
       grid-template-columns: 130px 110px 130px 200px 120px 110px;
       column-gap: 20px;
       align-items: center;
-      padding: 20px 0;
+      padding: 24px 0;
       border-bottom: 1px solid #eee;
       width: 100%;
     }
@@ -174,6 +126,7 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 32px;
+      flex-direction: row;
     }
 
     &__pagination-info {
