@@ -5,11 +5,9 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title CRM Dashboard
     link(rel="stylesheet" href="../sass/main.scss")
-
     link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")
   body
-  
     .container
       include ../partials/_sidebar.pug
       main.main-content
@@ -27,74 +25,73 @@ html(lang="en")
               svg.icon
                 use(xlink:href='../images/sprite.svg#icon-search-1')
               input(type="text" placeholder="Search")
+          
           .customers__table-container
-            table.customers__table
-              thead
-                tr
-                  th.customers__th Customer Name
-                  th.customers__th Company
-                  th.customers__th Phone Number
-                  th.customers__th Email
-                  th.customers__th Country
-                  th.customers__th Status
-              tbody
-                tr.customers__tr
-                  td.customers__td Jane Cooper
-                  td.customers__td Microsoft
-                  td.customers__td (225) 555-0118
-                  td.customers__td jane@microsoft.com
-                  td.customers__td United States
-                  td.customers__td.customers__td--active Active
-                tr.customers__tr
-                  td.customers__td Floyd Miles
-                  td.customers__td Yahoo
-                  td.customers__td (205) 555-0100
-                  td.customers__td floyd@yahoo.com
-                  td.customers__td Kiribati
-                  td.customers__td.customers__td--inactive Inactive
-                tr.customers__tr
-                  td.customers__td Ronald Richards
-                  td.customers__td Adobe
-                  td.customers__td (302) 555-0107
-                  td.customers__td ronald@adobe.com
-                  td.customers__td Israel
-                  td.customers__td.customers__td--inactive Inactive
-                tr.customers__tr
-                  td.customers__td Marvin McKinney
-                  td.customers__td Tesla
-                  td.customers__td (252) 555-0126
-                  td.customers__td marvin@tesla.com
-                  td.customers__td Iran
-                  td.customers__td.customers__td--active Active
-                tr.customers__tr
-                  td.customers__td Jerome Bell
-                  td.customers__td Google
-                  td.customers__td (629) 555-0129
-                  td.customers__td jerome@google.com
-                  td.customers__td Réunion
-                  td.customers__td.customers__td--active Active
-                tr.customers__tr
-                  td.customers__td Kathryn Murphy
-                  td.customers__td Microsoft
-                  td.customers__td (406) 555-0120
-                  td.customers__td kathryn@microsoft.com
-                  td.customers__td Curaçao
-                  td.customers__td.customers__td--active Active
-                tr.customers__tr
-                  td.customers__td Jacob Jones
-                  td.customers__td Yahoo
-                  td.customers__td (208) 555-0112
-                  td.customers__td jacob@yahoo.com
-                  td.customers__td Brazil
-                  td.customers__td.customers__td--active Active
-                tr.customers__tr
-                  td.customers__td Kristin Watson
-                  td.customers__td Facebook
-                  td.customers__td (704) 555-0127
-                  td.customers__td kristin@facebook.com
-                  td.customers__td Åland Islands
-                  td.customers__td.customers__td--inactive Inactive
-
+            .customers__header
+              .customers__th Customer Name
+              .customers__th Company 
+              .customers__th Phone Number
+              .customers__th Email
+              .customers__th Country
+              .customers__th Status
+            .customers__body
+              .customers__row
+                .customers__td Jane Cooper
+                .customers__td Microsoft
+                .customers__td (225) 555-0118
+                .customers__td jane@microsoft.com
+                .customers__td United States
+                .customers__td.customers__td--active Active
+              .customers__row
+                .customers__td Floyd Miles
+                .customers__td Yahoo
+                .customers__td (205) 555-0100
+                .customers__td floyd@yahoo.com
+                .customers__td Kiribati
+                .customers__td.customers__td--inactive Inactive
+              .customers__row
+                .customers__td Ronald Richards
+                .customers__td Adobe
+                .customers__td (302) 555-0107
+                .customers__td ronald@adobe.com
+                .customers__td Israel
+                .customers__td.customers__td--inactive Inactive
+              .customers__row
+                .customers__td Marvin McKinney
+                .customers__td Tesla
+                .customers__td (252) 555-0126
+                .customers__td marvin@tesla.com
+                .customers__td Iran
+                .customers__td.customers__td--active Active
+              .customers__row
+                .customers__td Jerome Bell
+                .customers__td Google
+                .customers__td (629) 555-0129
+                .customers__td jerome@google.com
+                .customers__td Réunion
+                .customers__td.customers__td--active Active
+              .customers__row
+                .customers__td Kathryn Murphy
+                .customers__td Microsoft
+                .customers__td (406) 555-0120
+                .customers__td kathryn@microsoft.com
+                .customers__td Curaçao
+                .customers__td.customers__td--active Active
+              .customers__row
+                .customers__td Jacob Jones
+                .customers__td Yahoo
+                .customers__td (208) 555-0112
+                .customers__td jacob@yahoo.com
+                .customers__td Brazil
+                .customers__td.customers__td--active Active
+              .customers__row
+                .customers__td Kristin Watson
+                .customers__td Facebook
+                .customers__td (704) 555-0127
+                .customers__td kristin@facebook.com
+                .customers__td Åland Islands
+                .customers__td.customers__td--inactive Inactive
+          
           .customers__pagination
             p.customers__pagination-info Showing data 1 to 8 of 256K entries
             .customers__pagination-buttons
@@ -107,6 +104,5 @@ html(lang="en")
               button.customers__pagination-button 40
               button.customers__pagination-button &gt;
 
-  
     script(type="module" src="../index.js")
     script(src="../js/gsap.js")
