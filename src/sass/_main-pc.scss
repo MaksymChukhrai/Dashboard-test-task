@@ -29,6 +29,7 @@
       margin-top: 0;
       font-weight: 400;
       line-height: normal;
+      padding-left: 0;
     }
   }
 
@@ -64,6 +65,8 @@
       .customers__header {
         grid-template-columns: 130px 110px 130px 200px 120px 110px;
         padding: 14px 0px;
+        column-gap: 25px;
+
       }
     }
 
@@ -71,9 +74,9 @@
       display: grid;
       // Меняем значения колонок для более точного соответствия макету
       grid-template-columns: 130px 110px 130px 200px 120px 110px;
-      column-gap: 20px;
+      column-gap: 25px;
       align-items: center;
-      padding: 24px 0;
+      padding: 16px 0;
       border-bottom: 1px solid #eee;
       width: 100%;
     }
@@ -127,20 +130,6 @@
       align-items: center;
       margin-top: 32px;
       flex-direction: row;
-    }
-
-    &__pagination-info {
-      color: var(--light-grey-color);
-      line-height: normal;
-      letter-spacing: -0.14px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &__pagination-buttons {
-      display: flex;
-      gap: 12px;
-      // margin-right: 30px;
     }
 
     &__pagination-button {
