@@ -1,11 +1,18 @@
-doctype html
+DOCTYPE: HTML5
 html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title CRM Dashboard
+    //- Асинхронная загрузка шрифтов
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'")
+    //- Резервный вариант загрузки шрифтов
+    noscript
+      link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap")
     link(rel="stylesheet" href="../sass/main.scss")
-    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")
   body
     .container
@@ -22,9 +29,10 @@ html(lang="en")
               h2.customers__title All Customers
               p.customers__subtitle Active Members
             .customers__search
+              label.visually-hidden(for="search") Search customers
               svg.icon
                 use(xlink:href='../images/sprite.svg#icon-search-1')
-              input(type="text" placeholder="Search")
+              input#search(type="text" placeholder="Search")
           
           .customers__table-container
             .customers__header

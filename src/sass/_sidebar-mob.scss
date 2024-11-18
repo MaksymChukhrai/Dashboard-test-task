@@ -1,4 +1,3 @@
-// src\sass\_sidebar-mob.scss
 @media screen and (max-width: 1439px) {
   .sidebar {
     background-color: var(--primary-white-color);
@@ -21,7 +20,6 @@
       transform: translateX(0);
       opacity: 1;
       pointer-events: auto;
- 
     }
 
     &.is-hidden {
@@ -42,22 +40,22 @@
         -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none;
         user-select: none;
-        
+
         &:focus,
         &:active,
         &:hover {
-          outline: none ;
-          border: none ;
-          -webkit-tap-highlight-color: transparent ;
-          box-shadow: none ;
-          text-decoration: none ;
+          outline: none;
+          border: none;
+          -webkit-tap-highlight-color: transparent;
+          box-shadow: none;
+          text-decoration: none;
         }
         svg {
           width: 37px;
           height: 37px;
         }
-        svg, 
-        span, 
+        svg,
+        span,
         div {
           pointer-events: none;
         }
@@ -114,6 +112,11 @@
         gap: 14px;
         justify-content: space-between;
         width: 100%;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.14px;
 
         &:hover {
           color: var(--active-color);

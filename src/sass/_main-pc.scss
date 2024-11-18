@@ -1,4 +1,3 @@
-// src\sass\_main-pc.scss
 @media screen and (min-width: 1440px) {
   // Скрываем мобильные элементы
   .mobile-menu-overlay,
@@ -53,32 +52,41 @@
     &__search {
       margin-right: 9px;
       margin-top: 5px;
-  
     }
 
     // Стили для таблицы на grid
     &__table-container {
-       margin-top: 40px;
-       overflow-x: initial;
-       margin-bottom: 0;
+      margin-top: 40px;
+      overflow-x: initial;
+      margin-bottom: 0;
 
       .customers__header {
-        grid-template-columns: 130px 110px 130px 200px 120px 110px;
-        padding: 14px 0px;
-        column-gap: 25px;
+        display: grid;
+        grid-template-columns: 172px 140px 140px 210px 140px 84px; 
+        column-gap: 0;
+        align-items: center;
+        position: relative;
+        padding-bottom: 16px;
 
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: -40px;
+          width: 968px;
+          height: 1px;
+          background-color: #eee;
+        }
       }
     }
 
     &__row {
       display: grid;
-      // Меняем значения колонок для более точного соответствия макету
-      grid-template-columns: 130px 110px 130px 200px 120px 110px;
-      column-gap: 25px;
+      grid-template-columns: 172px 140px 140px 210px 140px 84px;
       align-items: center;
-      padding: 16px 0;
-      border-bottom: 1px solid #eee;
-      width: 100%;
+      column-gap: 0;
+      padding: 19px 0;
+      position: relative;
     }
 
     &__th {
@@ -86,7 +94,7 @@
       font-weight: 500;
       line-height: normal;
       letter-spacing: -0.14px;
-      text-align: left; // Добавили выравнивание текста
+      text-align: left;
     }
 
     &__td {
@@ -94,7 +102,7 @@
       font-weight: 500;
       line-height: normal;
       letter-spacing: -0.14px;
-      text-align: left; // Добавили выравнивание текста
+      text-align: left;
 
       &--active {
         color: #008767;
@@ -106,20 +114,11 @@
         padding: 4px 12px;
         display: inline-flex;
         width: 84px;
-        justify-self: start; // Добавили для выравнивания кнопки статуса
+        justify-self: start;
       }
 
       &--inactive {
         color: var(--inactive-red-color);
-        background: #ffc5c5;
-        border: 1px solid var(--inactive-red-color);
-        border-radius: 4px;
-        justify-content: center;
-        align-items: center;
-        padding: 4px 12px;
-        display: inline-flex;
-        width: 84px;
-        justify-self: start; // Добавили для выравнивания кнопки статуса
       }
     }
 

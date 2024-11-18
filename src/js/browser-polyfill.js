@@ -20,5 +20,5 @@ if (typeof window.browser === 'undefined') {
   };
   
 
-  console.log('Полный полифилл для browser API создан');
+
 }

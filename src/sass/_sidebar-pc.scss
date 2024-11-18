@@ -50,7 +50,7 @@
       padding: 0;
       display: flex;
       flex-direction: column;
-      gap: 19px;
+      gap: 18px;
       margin-top: 50px;
       margin-bottom: 598px;
     }
@@ -59,7 +59,6 @@
       display: flex;
       align-items: center;
       flex-direction: row;
-      // width: 250px;
       padding: 11px;
       border-radius: 8px;
 
@@ -105,7 +104,7 @@
       }
       &--active svg.icon-arrow {
         fill: var(--primary-white-color);
-        margin-left: 60px;
+        margin-right: 4px;
       }
     }
 

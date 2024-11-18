@@ -1,23 +1,23 @@
 :root {
---primary-white-color:#fff;
---main-content-bg-color:#fafbff;
---input-bg-color:#F9FBFF;
---active-color:#5932ea;
---light-grey-color:#b5b7c0;
---light-green-color:#16c098;
---inactive-red-color:#df0404;
---transition-speed: 800ms;
---transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --primary-white-color: #fff;
+  --main-content-bg-color: #fafbff;
+  --input-bg-color: #f9fbff;
+  --active-color: #5932ea;
+  --light-grey-color: #b5b7c0;
+  --light-green-color: #16c098;
+  --inactive-red-color: #df0404;
+  --transition-speed: 800ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  input,
-  textarea,
-  button,
-  select,
-  a {
-    -webkit-tap-highlight-color: transparent;
-  }
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

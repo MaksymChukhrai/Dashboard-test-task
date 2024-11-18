@@ -1,228 +1,240 @@
-// src/sass/_main-mob.scss
+.burger-menu {
+  display: block;
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
 
-  body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+  svg.icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--active-color);
   }
-  .burger-menu {
-    display: block;
-    position: absolute;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
+}
 
-    svg.icon {
+.main-content {
+  padding: 27px 15px 15px 15px;
+  background-color: var(--main-content-bg-color);
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.customers__table-container {
+  overflow-x: auto;
+}
+//customers
+.customers {
+  background-color: var(--primary-white-color);
+  fill: var(--primary-white-color);
+  filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
+  border-radius: 30px;
+  padding: 20px 0px 30px 20px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.22px;
+  }
+
+  &__subtitle {
+    color: var(--light-green-color);
+    font-weight: 400;
+    letter-spacing: -0.14px;
+    margin: 0;
+  }
+
+  // Стили для поиска
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+
+    svg {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
       width: 24px;
       height: 24px;
-      fill: var(--active-color);
-    }
-  }
-
-  .main-content {
-    padding: 27px 15px 15px 15px;
-    background-color: var(--main-content-bg-color);
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    
+      pointer-events: none;
     }
 
-    &__title {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-left: 20px;
-      font-size: 22px;
-      font-weight: 600;
-      line-height: normal;
-      letter-spacing: -0.22px;
-    }
-  }
-
-  .customers__table-container{
-    overflow-x: auto;
-  }
-  //customers
-  .customers {
-    background-color: var(--primary-white-color);
-    fill: var(--primary-white-color);
-    filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.5));
-    border-radius: 30px;
-    padding: 20px 0px 30px 20px;
-
-
-    // Стили для заголовка секции
-    &__header {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      // align-items: center;
-      // margin-bottom: 30px;
-    }
-
-    &__title {
-      margin-top: 0;
-      margin-bottom: 7px;
-      font-size: 22px;
-      font-weight: 600;
-      line-height: normal;
-      letter-spacing: -0.22px;
-    }
-
-    &__subtitle {
-      color: var(--light-green-color);
-      font-weight: 400;
-      letter-spacing: -0.14px;
-      margin: 0;
-    }
-
-    // Стили для поиска
-    &__search {
-      position: relative;
-      display: flex;
-      align-items: center;
-
-      margin-top: 10px;
-
-      svg {
-        position: absolute;
-        left: 8px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 24px;
-        height: 24px;
-        pointer-events: none;
-      }
-
-      input {
-        border-radius: 10px;
-        background: var(--input-bg-color);
-        width: 216px;
-        height: 38px;
-        padding-left: 40px;
-        border: none;
-        color: var(--light-grey-color);
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: -0.12px;
-      }
-    }
-
-    // Стили для таблицы на grid
-    &__table-container {
-      display: grid;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      width: 100%;
-
-      .customers__header {
-        display: grid;
-        // Меняем значения колонок для более точного соответствия макету
-        grid-template-columns: 130px 110px 130px 200px 120px 110px;
-        column-gap: 20px;
-        align-items: center;
-        padding: 14px 0;
-        border-bottom: 1px solid #eee;
-        width: 100%;
-      }
-    }
-
-    &__row {
-      display: grid;
-      // Меняем значения колонок для более точного соответствия макету
-      grid-template-columns: 130px 110px 130px 200px 120px 110px;
-      column-gap: 20px;
-      align-items: center;
-      padding: 7px 0;
-      border-bottom: 1px solid #eee;
-      width: 100%;
-    }
-
-    &__th {
+    input {
+      border-radius: 10px;
+      background: var(--input-bg-color);
+      width: 216px;
+      height: 38px;
+      padding-left: 40px;
+      border: none;
       color: var(--light-grey-color);
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: -0.14px;
-      text-align: left; // Добавили выравнивание текста
-    }
-    &__th:last-child {
-      padding-left: 15px;
-    }
-
-    &__td {
-      color: #292d32;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: -0.14px;
-      text-align: left; // Добавили выравнивание текста
-
-      &--active {
-        color: #008767;
-        background: rgba(22, 192, 152, 0.38);
-        border: 1px solid #00b087;
-        border-radius: 4px;
-        justify-content: center;
-        align-items: center;
-        padding: 4px 12px;
-        display: inline-flex;
-        width: 84px;
-        justify-self: start; // Добавили для выравнивания кнопки статуса
-      }
-
-      &--inactive {
-        color: var(--inactive-red-color);
-        background: #ffc5c5;
-        border: 1px solid var(--inactive-red-color);
-        border-radius: 4px;
-        justify-content: center;
-        align-items: center;
-        padding: 4px 12px;
-        display: inline-flex;
-        width: 84px;
-        justify-self: start; // Добавили для выравнивания кнопки статуса
-      }
-    }
-
-    // Стили для пагинации
-    &__pagination {
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
-    }
-
-    &__pagination-info {
-      color: var(--light-grey-color);
-      line-height: normal;
-      letter-spacing: -0.14px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &__pagination-buttons {
-      display: flex;
-      gap: 12px;
-      // margin-right: 30px;
-    }
-
-    &__pagination-button {
-      border-radius: 4px;
-      border: 1px solid #eee;
-      padding: 6px 6px;
-      background: transparent;
-      cursor: pointer;
-      color: #404b52;
       font-size: 12px;
-      font-weight: 500;
-      line-height: 1;
+      font-weight: 400;
       letter-spacing: -0.12px;
+    }
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 
-      &--active {
-        border: 1px solid var(--active-color);
-        background: var(--active-color);
-        color: var(--primary-white-color);
+  // Стили для таблицы на grid
+  &__table-container {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    .customers__header {
+      display: grid;
+      grid-template-columns: 172px 140px 140px 200px 140px 94px;
+      column-gap: 0;
+      align-items: center;
+      position: relative;
+      padding-bottom: 7px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -40px;
+        width: 968px;
+        height: 1px;
+        background-color: #eee;
       }
     }
   }
 
+  &__row {
+    display: grid;
+    grid-template-columns: 172px 140px 140px 200px 140px 94px;
+    align-items: center;
+    column-gap: 0;
+    padding: 7px 0;
+    position: relative;
 
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 886px;
+      height: 1px;
+      background-color: #eee;
+    }
+  }
+
+  &__th {
+    color: var(--light-grey-color);
+    font-size: 14px;
+    line-height: normal;
+    text-align: left;
+  }
+  &__th:last-child {
+    padding-left: 15px;
+  }
+
+  &__td {
+    color: #292d32;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    text-align: left;
+
+    &--active {
+      color: #008767;
+      background: rgba(22, 192, 152, 0.38);
+      border: 1px solid #00b087;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 12px;
+      display: inline-flex;
+      width: 84px;
+      justify-self: start;
+    }
+
+    &--inactive {
+      color: var(--inactive-red-color);
+      background: #ffc5c5;
+      border: 1px solid var(--inactive-red-color);
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 12px;
+      display: inline-flex;
+      width: 84px;
+      justify-self: start;
+    }
+  }
+
+  // Стили для пагинации
+  &__pagination {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  &__pagination-info {
+    color: var(--light-grey-color);
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__pagination-buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__pagination-button {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    padding: 6px 6px;
+    background: transparent;
+    cursor: pointer;
+    color: #404b52;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.12px;
+
+    &--active {
+      border: 1px solid var(--active-color);
+      background: var(--active-color);
+      color: var(--primary-white-color);
+    }
+  }
+}
